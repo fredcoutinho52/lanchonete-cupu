@@ -1,25 +1,6 @@
 {
   "demand": [
     {
-      "id": 1,
-      "items": [
-        {
-          "name": "Arroz",
-          "amount": 20
-        },
-        {
-          "name": "Tomate",
-          "amount": 10
-        },
-        {
-          "name": "Frango",
-          "amount": 50
-        }
-      ],
-      "total": 80
-    },
-    {
-      "id": 2,
       "items": [
         {
           "name": "Macarrão",
@@ -34,93 +15,36 @@
           "amount": 10
         }
       ],
-      "total": 75
-    },
-    {
-      "id": 3,
-      "items": [
-        {
-          "name": "Carne",
-          "amount": 50
-        },
-        {
-          "name": "Suco",
-          "amount": 20
-        },
-        {
-          "name": "Batata",
-          "amount": 15
-        }
-      ],
-      "total": 85
+      "total": 75,
+      "id": 2
     },
     {
       "items": [
         {
           "name": "Hambúrger",
-          "amount": "1"
+          "amount": "2"
         },
         {
           "name": "Suco",
-          "amount": "1"
+          "amount": "2"
         }
       ],
-      "total": 27,
-      "id": 4
-    },
-    {
-      "items": [
-        {
-          "name": "Milk Shake",
-          "amount": "1"
-        },
-        {
-          "name": "Batata Frita",
-          "amount": "3"
-        }
-      ],
-      "total": 34,
+      "total": 54,
       "id": 5
     },
     {
       "items": [
         {
+          "name": "Milk Shake",
+          "amount": "1"
+        },
+        {
           "name": "Batata Frita",
           "amount": "1"
-        },
-        {
-          "name": "Hambúrger",
-          "amount": "1"
-        },
-        {
-          "name": "Refrigerante",
-          "amount": "1"
         }
       ],
-      "total": 38,
+      "total": 18,
       "id": 6
-    },
-    {
-      "items": [
-        {
-          "name": "Hambúrger",
-          "amount": "1"
-        },
-        {
-          "name": "Milk Shake",
-          "amount": "2"
-        },
-        {
-          "name": "Panqueca",
-          "amount": "1"
-        },
-        {
-          "name": "Suco",
-          "amount": "1"
-        }
-      ],
-      "total": 59,
-      "id": 7
     }
   ]
 }

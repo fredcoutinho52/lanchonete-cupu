@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import Header from '../../components/Header'
 import './styles.css'
 
 import api from '../../services/api'
-
-import logo from '../../assets/logo.png'
 
 export default function Home() {
     const [products, setProducts] = useState([])
@@ -18,21 +17,15 @@ export default function Home() {
         loadProducts()
     }, [])
 
+    async function handleFinishDemand(id) {
+        await api.delete(`demand/${id}`)
+
+        window.location.reload()
+    }
+
     return (
         <div className="App">
-            <header className="app-header">
-                <div className="container-header">
-                    <span className="brand">
-                        <img src={logo} alt="Lanchonete Cupú"/>
-                        <h2>Lanchonete Cupú</h2>
-                    </span>
-
-                    <ul>
-                        <li><a href="/">Meus pedidos</a></li>
-                        <li><a href="/new">Novo pedido</a></li>
-                    </ul>
-                </div>
-            </header>
+            <Header/>
 
             <main className="app-main">
                 <div className="container-main">
@@ -49,6 +42,11 @@ export default function Home() {
                                 ))}
 
                                 <span className="total">{`Total: R$${product.total}`}</span>
+
+                                <div className="buttons">
+                                    <button onClick={() => handleFinishDemand(product.id)}>Finalizar</button>
+                                    <button onClick={() => handleFinishDemand(product.id)}>Cancelar</button>
+                                </div>
                             </div>
                         ))}
                     </div>

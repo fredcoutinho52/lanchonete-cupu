@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import Header from '../../components/Header'
 import './styles.css'
 
 import api from '../../services/api'
-
-import logo from '../../assets/logo.png'
 
 const productsList = [
     { name: "Hambúrger", price: 20 },
@@ -54,19 +53,7 @@ export default function New() {
 
     return (
         <div className="App">
-            <header className="app-header">
-                <div className="container-header">
-                    <span className="brand">
-                        <img src={logo} alt="Lanchonete Cupú"/>
-                        <h2>Lanchonete Cupú</h2>
-                    </span>
-
-                    <ul>
-                        <li><a href="/">Meus pedidos</a></li>
-                        <li><a href="/new">Novo pedido</a></li>
-                    </ul>
-                </div>
-            </header>
+            <Header/>
 
             <main className="app-main">
                 <div className="container-main">

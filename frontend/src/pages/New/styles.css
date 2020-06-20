@@ -6,56 +6,6 @@ html, body, #root, .App {
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* header */
-.app-header {
-    width: 100%;
-    min-height: 85px;
-    display: flex;
-    align-items: center;
-    background-color: rebeccapurple;
-}
-
-.container-header {
-    width: 85%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.container-header .brand {
-    display: flex;
-    align-items: center;
-}
-
-.brand img {
-    width: 15%;
-    margin-right: 20px;
-}
-
-.brand h2 {
-    color: #fff;
-}
-
-.container-header ul {
-    list-style: none;
-}
-
-.container-header ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-.container-header ul li a {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.container-header ul li a:hover {
-    text-decoration: underline;
-}
-
 /* main */
 .app-main {
     width: 100%;
@@ -120,4 +70,35 @@ html, body, #root, .App {
     flex-direction: column;
     margin-top: 30px;
     font-size: 18px;
+}
+
+/* Responsive code */
+@media (max-width: 752px) {
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form .input-container input {
+        width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .form .input-container select {
+        width: 320px;
+        margin-bottom: 15px;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form .buttons-container button {
+        margin: 10px 0;
+    }
+
+    .container-main h1 {
+        text-align: center;
+    }
 }
